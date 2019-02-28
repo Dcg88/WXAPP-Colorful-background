@@ -1,0 +1,53 @@
+.animationSlow {
+  margin-top: -1555px;
+  margin-left: -1555px;
+  width: 7777rpx;
+  height: 7777rpx;
+  background-color: rgba(0, 0, 0, 0.397);
+  animation-name: myfirst; 
+  animation-duration: 2000s; 
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; 
+  -webkit-animation-name: myfirst;
+  -webkit-animation-duration: 3000ms;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  position: fixed;
+  z-index: -1;
+}
+
+@keyframes myfirst {
+
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@-webkit-keyframes myfirst {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.t {
+  margin: auto;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+ font-weight: 800;
+}
