@@ -1,23 +1,33 @@
 .animationSlow {
-  margin-top: -1555px;
-  margin-left: -1555px;
-  width: 7777rpx;
-  height: 7777rpx;
-  background-color: rgba(0, 0, 0, 0.397);
-  animation-name: myfirst; 
-  animation-duration: 2000s; 
+  /* 动画区 */
+  margin-top: -5555rpx; /* 高度的-1/2 或 者高一点 */
+  width: 10000rpx; /* 彩色背景大小 可自定义 */
+  height: 10000rpx; /* 彩色背景大小 可自定义 */
+  animation-name: myfirst;
+  animation-duration: 2000s;
   animation-timing-function: linear;
-  animation-iteration-count: infinite; 
+  animation-iteration-count: infinite;
   -webkit-animation-name: myfirst;
-  -webkit-animation-duration: 3000ms;
+  -webkit-animation-duration: 8000ms; /* 速度 */
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   position: fixed;
-  z-index: -1;
+  z-index: 1;
+}
+
+.v {
+  background-color: rgb(255, 255, 255);
+  margin: 0px auto auto;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
 }
 
 @keyframes myfirst {
-
   from {
     transform: rotate(0deg);
   }
@@ -26,7 +36,6 @@
     transform: rotate(360deg);
   }
 }
-
 
 @-webkit-keyframes myfirst {
   from {
@@ -38,16 +47,21 @@
   }
 }
 
-.t {
-  margin: auto;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  bottom: 0px;
-  position: absolute;
-  display: flex;
-  justify-content: center;
+
+
+.box {
+  margin-top: 618rpx;
+  background-color: rgba(255, 255, 255, 0.315);
+  border-radius: 15px;
+  -webkit-backdrop-filter: blur(10px);
+  padding: 20px 40px;
+  z-index: 3;
+}
+
+.container {
   align-items: center;
-  color: white;
- font-weight: 800;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+
 }
